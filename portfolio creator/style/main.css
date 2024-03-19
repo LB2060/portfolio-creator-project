@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* bu hisse yazi fontlarinin kodlaridir */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* yazi fontlari bitti */
+/* header hissenin kodlanmsi start */
+/* basliqdaki yazi ve sekli yan-yana ve saytin ortasindan qoymaq ucun */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* basliqdaki yazilarin formasinin deyismesi */
+header nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 20px;
+}
+
+/* telefonda basliq yazilarinin seliqesiz gorsendiyi ucun yazilarin silinmesi */
+header nav {
+  display: none;
+ 
+}
+
+/* header hissenin kodlanmasi end */
+/* section 1 == introduction */
+section div span{
+  color: #FF8A56;
+}
+section{
+  margin-top: 50px;
+}
+section div h1{
+  font-size: 37px;
+}
+section div p{
+  font-size: 12px;
+}
+.introduction-right-side{
+  width: 300px;
+}
+.introduction-right-side img{
+  width: 100%;
+}
+.introduction-left-side p{
+  color: #666;
+}
+section div .book-a-call{
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+  display: inline-flex;
+  width: 151px;
+  height: 58px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  
+}
+section div .download-cv{
+  color: #000;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 45px;
+}
+section .introduction-left-side img{
+  margin-left: 15px;
+}
+/* section 2 == company logo */
+.company-logo div {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 3px;
+  width: 320px;
+  height: 252px;
+}
+.company-logo div img{
+  margin: 15px;
+}
+
+/* cihazlarin olculerine uygunlasdirma kodu */
+@media(min-width:768px) {
+  .fa-bars {
+    display: none !important
+  }
+  header nav {
+    display: flex;
+  }
+  section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+  section div h1{
+    font-size: 47px;
+  }
+  section div p{
+    font-size: 15px;
+    margin-top: 27px;
+  }
+  section div .book-a-call{
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    display: inline-flex;
+    width: 151px;
+    height: 58px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    
+  }
+  section div .download-cv{
+    color: #000;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 45px;
+  }
+  section .introduction-left-side img{
+    margin-left: 15px;
+  }
+  .company-logo div {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 15px;
+    width: 768px;
+    height: 252px;
+
+  }
+  
+}
+@media(min-width:1280px){
+  .fa-bars {
+    display: none !important
+  }
+  /* notbuklarda header hisse */
+  header nav {
+    display: flex;
+  }
+  /* notbuklarda section 1 == introductopn hisse */
+  section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+  section div h1{
+    font-size: 72px;
+  }
+  section div p{
+    font-size: 21px;
+    margin-top: 27px;
+  }
+  .introduction-right-side{
+    width: 500px;
+  }
+  section div .book-a-call{
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    display: inline-flex;
+    width: 151px;
+    height: 58px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    
+  }
+  section div .download-cv{
+    color: #000;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 45px;
+  }
+  section .introduction-left-side img{
+    margin-left: 15px;
+  }
+  .company-logo div {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 70px;
+    width: 1280px;
+    height: 252px;
+  }
+  .company-logo div img{
+    margin: 45px;
+  }
+}
